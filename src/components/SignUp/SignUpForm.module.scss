@@ -1,0 +1,50 @@
+@import "../../color-palette.scss";
+
+.form {
+  margin-top: 30px;
+
+  label {
+    font-size: 0.9rem;
+    color: $charcoal-grey;
+    font-weight: 700;
+    display: inline-block;
+    width: 50%;
+    margin-top: 10px;
+  }
+
+  input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    outline: $grey 1px solid;
+    font-size: 1rem;
+    padding-left: 15px;
+    margin: 5px 0 15px 0;
+    box-sizing: border-box;
+
+    &::placeholder {
+      color: $grey;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .invalid {
+    background-color: #ffe8e6;
+    outline: $tomato 1px solid;
+    color: $tomato;
+  }
+
+  .error {
+    color: $tomato;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: right;
+    width: 50%;
+    display: inline-block;
+    margin: 0;
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../color-palette.scss";
+
+.button {
+  width: 100%;
+  background-color: $dark-slate-grey;
+  color: $white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  height: 50px;
+  border-radius: 8px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
