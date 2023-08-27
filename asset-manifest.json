@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/newsletter-signup/static/css/main.804c329c.css",
+    "main.js": "/newsletter-signup/static/js/main.5056c7a3.js",
+    "static/media/illustration-sign-up-desktop.svg": "/newsletter-signup/static/media/illustration-sign-up-desktop.ce2024babf0bc98a8862252535b544c9.svg",
+    "index.html": "/newsletter-signup/index.html",
+    "static/media/icon-list.svg": "/newsletter-signup/static/media/icon-list.5e317c030bb9f11a3343.svg",
+    "main.804c329c.css.map": "/newsletter-signup/static/css/main.804c329c.css.map",
+    "main.5056c7a3.js.map": "/newsletter-signup/static/js/main.5056c7a3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.804c329c.css",
+    "static/js/main.5056c7a3.js"
+  ]
+}
