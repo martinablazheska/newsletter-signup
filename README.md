@@ -41,4 +41,4 @@ Practiced the use of React hooks, validation and submission. Learned that unorde
 
 ### Continued development
 
-Add success state and mobile version.
+Add a mobile version. Implement useReducer to manage the email and email validity states in the SignUpForm component. Implement useContext to avoid prop drilling to send the email state.

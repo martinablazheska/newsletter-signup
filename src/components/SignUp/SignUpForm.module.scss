@@ -30,12 +30,19 @@
     &:hover {
       cursor: pointer;
     }
+
+    &:focus {
+      outline: 1px $charcoal-grey solid;
+    }
   }
 
   .invalid {
     background-color: #ffe8e6;
     outline: $tomato 1px solid;
     color: $tomato;
+    &:focus {
+      outline: 1px $tomato solid;
+    }
   }
 
   .error {

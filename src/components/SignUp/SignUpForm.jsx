@@ -2,7 +2,7 @@ import classes from "./SignUpForm.module.scss";
 import Button from "../UI/Button";
 import { useState } from "react";
 
-function SignUpForm() {
+function SignUpForm(props) {
   const [emailInput, setEmailInput] = useState("");
   const [isValid, setIsValid] = useState(true);
 
@@ -10,7 +10,7 @@ function SignUpForm() {
     setEmailInput(event.target.value);
   }
 
-  function subscribeHandler(event) {
+  function subscribeButtonHandler(event) {
     event.preventDefault();
     if (
       emailInput.trim().length >= 5 &&
@@ -18,27 +18,30 @@ function SignUpForm() {
       emailInput.includes(".")
     ) {
       setIsValid(true);
+      props.subscribeHandler(emailInput);
     } else {
       setIsValid(false);
     }
   }
 
   return (
-    <form className={classes.form}>
-      <label htmlFor="email">Email address</label>
-      {!isValid && <p className={classes.error}>Valid email required</p>}
-      <input
-        type="text"
-        id="email"
-        placeholder="email@company.com"
-        onChange={changeHandler}
-        value={emailInput}
-        className={isValid === false ? classes.invalid : ""}
-      />
-      <Button onClick={subscribeHandler}>
-        Subscribe to monthly newsletter
-      </Button>
-    </form>
+    <>
+      <form className={classes.form}>
+        <label htmlFor="email">Email address</label>
+        {!isValid && <p className={classes.error}>Valid email required</p>}
+        <input
+          type="text"
+          id="email"
+          placeholder="email@company.com"
+          onChange={changeHandler}
+          value={emailInput}
+          className={isValid === false ? classes.invalid : ""}
+        />
+        <Button onClick={subscribeButtonHandler}>
+          Subscribe to monthly newsletter
+        </Button>
+      </form>
+    </>
   );
 }
 
