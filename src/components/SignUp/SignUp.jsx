@@ -1,5 +1,6 @@
 import Card from "../UI/Card";
-import illustration from "../../assets/images/illustration-sign-up-desktop.svg";
+import desktopIllustration from "../../assets/images/illustration-sign-up-desktop.svg";
+import mobileIllustration from "../../assets/images/illustration-sign-up-mobile.svg";
 import classes from "./SignUp.module.scss";
 import SignUpForm from "./SignUpForm";
 import List from "./List";
@@ -18,7 +19,16 @@ function SignUp(props) {
         <SignUpForm subscribeHandler={subscribeHandler} />
       </div>
       <div>
-        <img src={illustration} alt="Abstract sign up illustration" />
+        <img
+          src={desktopIllustration}
+          alt="Abstract sign up illustration"
+          className={classes.desktop}
+        />
+        <img
+          src={mobileIllustration}
+          alt="Abstract sign up illustration"
+          className={classes.mobile}
+        />
       </div>
     </Card>
   );

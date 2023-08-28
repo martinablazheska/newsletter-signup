@@ -5,10 +5,19 @@ body {
   color: $dark-slate-grey;
   font-family: "Roboto", sans-serif;
   padding: 0;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  body {
+    background-color: white;
+    align-items: flex-start;
+    box-sizing: border-box;
+  }
 }

@@ -30,7 +30,7 @@ function SignUpForm(props) {
         <label htmlFor="email">Email address</label>
         {!isValid && <p className={classes.error}>Valid email required</p>}
         <input
-          type="text"
+          type="email"
           id="email"
           placeholder="email@company.com"
           onChange={changeHandler}

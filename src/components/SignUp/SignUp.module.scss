@@ -18,5 +18,40 @@
     img {
       height: 100%;
     }
+
+    .mobile {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .signup {
+    flex-direction: column-reverse;
+    height: 100vh;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    justify-content: start;
+    padding: 0;
+    margin: 0;
+
+    div {
+      margin: 0;
+      padding: 10px;
+      height: auto;
+      .mobile {
+        display: block;
+        width: 100%;
+      }
+      .desktop {
+        display: none;
+      }
+      &:nth-of-type(2) {
+        justify-self: end;
+        margin: 0;
+        padding: 0;
+      }
+    }
   }
 }
