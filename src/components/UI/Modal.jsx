@@ -22,7 +22,9 @@ function Modal(props) {
           <span className={classes.bolded}>{props.email}</span>. Please open it
           and click the button inside it to confirm your subscription.
         </p>
-        <Button onClick={dismissHandler}>Dismiss message</Button>
+        <Button className={classes["dismiss-button"]} onClick={dismissHandler}>
+          Dismiss message
+        </Button>
       </Card>
     </>
   );
