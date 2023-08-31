@@ -37,8 +37,8 @@ Users should be able to:
 
 ### What I learned
 
-Practiced the use of React hooks, validation and submission. Learned that unordered list bullets can be styled using CSS.
+Practiced the use of React hooks, validation and submission. Learned that unordered list bullets can be styled using CSS.Learned multiple ways to introduce email validation. Built a custom context providing component and managed states globally through useContext.
 
 ### Continued development
 
-Implement useReducer to manage the email and email validity states in the SignUpForm component. Implement useContext to avoid prop drilling to send the email state.
+Implement useReducer to manage the email, email validity and subscribing states. Improve email validation. Dismiss the success state message by clicking anywhere on the backdrop.

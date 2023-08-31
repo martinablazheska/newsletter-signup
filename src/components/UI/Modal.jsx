@@ -3,7 +3,7 @@ import Button from "./Button";
 import Card from "./Card";
 import checkmark from "../../assets/images/icon-success.svg";
 
-function Backdrop() {
+function Backdrop(props) {
   return <div className={classes.backdrop}></div>;
 }
 

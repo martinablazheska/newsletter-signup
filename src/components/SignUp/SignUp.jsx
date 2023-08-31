@@ -5,18 +5,14 @@ import classes from "./SignUp.module.scss";
 import SignUpForm from "./SignUpForm";
 import List from "./List";
 
-function SignUp(props) {
-  function subscribeHandler(input) {
-    props.subscribeHandler(input);
-  }
-
+function SignUp() {
   return (
     <Card className={classes.signup}>
       <div>
         <h1>Stay updated!</h1>
         <p>Join 60,000+ product managers receiving monthly updates on:</p>
         <List />
-        <SignUpForm subscribeHandler={subscribeHandler} />
+        <SignUpForm />
       </div>
       <div>
         <img
