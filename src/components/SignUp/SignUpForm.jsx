@@ -23,6 +23,8 @@ function SignUpForm() {
     setIsTouched(false);
     if (isValid === true) {
       setIsSubscribed(true);
+    } else {
+      setIsValid(false);
     }
   }
 
