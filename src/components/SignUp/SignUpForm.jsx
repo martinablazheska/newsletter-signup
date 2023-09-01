@@ -4,8 +4,8 @@ import { useState, useContext } from "react";
 import { SubscribeContext } from "../../store/subscribe-context";
 
 function SignUpForm() {
-  const { email, setEmail, setIsSubscribed } = useContext(SubscribeContext);
-  const [isValid, setIsValid] = useState(null);
+  const { email, setEmail, setIsSubscribed, isValid, setIsValid } =
+    useContext(SubscribeContext);
   const [isTouched, setIsTouched] = useState(false);
 
   function changeHandler(event) {

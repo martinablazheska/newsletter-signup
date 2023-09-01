@@ -4,10 +4,13 @@ import { useContext } from "react";
 import { SubscribeContext } from "../store/subscribe-context";
 
 function Main() {
-  const { email, isSubscribed, setIsSubscribed } = useContext(SubscribeContext);
+  const { email, isSubscribed, setIsSubscribed, setIsValid, setEmail } =
+    useContext(SubscribeContext);
 
   function dismissHandler() {
     setIsSubscribed(false);
+    setIsValid(null);
+    setEmail("");
   }
 
   return (
